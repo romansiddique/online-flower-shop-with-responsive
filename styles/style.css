@@ -132,17 +132,47 @@ section{
     font-weight: 600;
 }
 
+/* discount styles */
+.discount{
+    background-color: rgba(229, 84, 115, 0.1);
+}
+.discount-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 100px;
+    
+}
+.discount-content{
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.discount-container img{
+    width: 300px;
+    height: 400px;
+}
+.discount-content span{
+    color: rgb(229, 84, 115);
+}
+.discount-content button{
+    margin-top: 30px;
+}
+
 /* media Query */
 
-/* media for banner */
+/* media for banner and discount */
 @media screen and (max-width:680px) {
-    .banner-container{
+    .banner-container , .discount-container{
         padding: 30px  30px;
     }
-    .banner-content{
+    .banner-content , .discount-content{
         width: 100%;
     }
-    .banner-image img{
+    .banner-image img , .discount-image img{
         display: none;
     }
     .banner{
@@ -151,19 +181,28 @@ section{
         background-repeat: no-repeat;
         background-position: center;
     }
-    .para{
+    .discount{
+        background-image:linear-gradient(180deg, rgba(217, 235, 113, 0.444), rgba(227, 251, 185, 0.525)), url("../Flower Asset/pngwing 8.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .discount-content span{
+        color: rgb(4, 4, 4);
+    }
+    .banner-content .para , .discount-content .para{
         display: none;
         
     }
 }
 @media screen and (min-width:681px) and (max-width:1024px) {
-    .banner-container{
+    .banner-container , .discount-container{
         padding: 20px  20px;
     }
-    .title{
+    .banner-content .title , .discount-content .title{
         font-size: 35px;
     }
-    .para{
+    .banner-content .para , .discount-content .para{
         font-size: 12px;
     }
 }
