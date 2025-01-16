@@ -103,7 +103,34 @@ section{
     font-weight: 700;
 }
 
-
+/* Services style */
+.services{
+    display: flex;
+    justify-content: center;
+}
+.service-container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    border-radius: 8px;
+    background-color: rgba(39, 39, 39, 0.05);
+    padding: 70px 30px;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.service img{
+    width: 50px;
+}
+.services p{
+    color: rgba(39, 39, 39, 0.8);
+    font-size: 13px;
+    font-weight: 600;
+}
 
 /* media Query */
 
@@ -168,3 +195,18 @@ section{
     }
 }
 
+/* media for service */
+@media screen and (max-width: 576px) {
+    .service-container{
+        width: 100%;
+        gap: 50px;
+        padding: 40px 20px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 850px) {
+    .service-container{
+        width: 80%;
+        gap: 50px;
+        padding: 40px 20px;
+    }
+}
