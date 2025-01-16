@@ -181,6 +181,73 @@ section{
     margin-bottom: 5px;
 }
 
+/* subscribe styles */
+.subscribe{
+    display: flex;
+    justify-content: center;
+}
+.subscribe-container{
+    width: 1000px;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../Flower Asset/Rectangle\ 9.png");
+    background-size: cover;
+}
+.subscribe-content{
+    text-align: center;
+}
+.subscribe-content h1{
+    margin-bottom: 0px;
+}
+.subscribe-content p{
+    margin-top: 0;
+}
+.subscribe-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.subscribe-input input{
+    border-radius: 8px;
+    background-color: rgba(219, 221, 222, 0.79);
+    border: none;
+    padding: 15px 30px;
+    width: 500px;
+    height: 25px;
+}
+.subscribe-input button{
+    margin-left: 20px;
+}
+
+/* footer styles */
+.footer{
+    background: rgb(17, 16, 16);
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    margin-bottom: 0;
+}
+footer{
+    text-align: center;
+}
+footer .title2{
+    color: white;
+}
+footer .title2 span{
+    color: rgb(229, 84, 115);
+}
+footer .para{
+    color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 15px;
+}
+footer .copyright{
+    color: rgba(255, 255, 255, 0.4);
+}
+
 /* media Query */
 
 /* media for banner and discount */
@@ -279,5 +346,24 @@ section{
 @media screen and (min-width: 926px) and (max-width: 1121px) {
     .flowers-card-image{
         flex-wrap: wrap;
+    }
+}
+
+/* media for subscribe */
+@media screen and (max-width: 577px) {
+    .subscribe-input{
+        flex-direction: column;
+    }
+    .subscribe-input button{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .subscribe-input input{
+        width: 300px;
+    }
+}
+@media screen and (min-width: 578px) and (max-width: 800px) {
+    .subscribe-input input{
+        width: 300px;
     }
 }
