@@ -86,16 +86,19 @@ section{
     padding: 30px 20px 0px 20px;
     border-radius: 300px 300px 0px 0px;
     background: rgba(167, 33, 98, 0.15);
+    border: 1px dashed rgba(239, 7, 119, 0.982);
 }
 .feature-flower .feature-flower2{
     padding: 30px 20px 0px 20px;
     border-radius: 300px 300px 0px 0px;
     background: rgba(5, 151, 160, 0.15);
+    border: 1px dashed rgba(5, 219, 230, 0.962);
 }
 .feature-flower .feature-flower3{
     padding: 30px 20px 0px 20px;
     border-radius: 300px 300px 0px 0px;
-    background: rgba(71, 125, 17, 0.15);;
+    background: rgba(71, 125, 17, 0.15);
+    border: 1px dashed rgba(119, 230, 8, 0.928);
 }
 .feature-flowers .flowers-figure{
     font-size: 15px;
@@ -160,6 +163,22 @@ section{
 }
 .discount-content button{
     margin-top: 30px;
+}
+
+/* flowers card styles */
+.flowers-card-image img{
+    border: 2px dashed rgba(22, 205, 246, 0.708);
+    width: 250px;
+    height: 300px;
+}
+.feature-flowers{
+    gap: 20px;
+}
+.flowers-card-content .para{
+    margin-bottom: 20px;
+}
+.flowers-card-content .title2{
+    margin-bottom: 5px;
 }
 
 /* media Query */
@@ -247,5 +266,18 @@ section{
         width: 80%;
         gap: 50px;
         padding: 40px 20px;
+    }
+}
+
+/* media for flowers-cars */
+@media screen and (max-width: 577px) {
+    .flowers-card-image img{
+        width: 350px;
+        height: 400px;
+    }
+}
+@media screen and (min-width: 926px) and (max-width: 1121px) {
+    .flowers-card-image{
+        flex-wrap: wrap;
     }
 }
